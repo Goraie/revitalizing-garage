@@ -1,0 +1,159 @@
+@import "./fonts.css";
+
+body{
+	font-family: manrope, sans-serif;
+}
+a{
+	text-decoration: none;
+}
+
+
+.header{
+	padding: 120px 0;
+}
+.offer{
+	margin-bottom: 120px;
+}
+.offer__title{
+	text-transform: uppercase;
+	font-family: rubik;
+	font-size: 40px;
+	line-height: 1.2;
+	margin-bottom: 70px;
+}
+.offer__title span{
+	display: block;
+	margin-top: 20px;
+	font-size: 64px;
+}
+.offer__text{
+	margin: 0;
+	padding: 0;
+	line-height: 1.4;
+	font-size: 24px;
+}
+
+.links{
+	padding-bottom: 185px;
+}
+.links__elem{
+	padding-top: 24px;
+	padding-left: 32px;
+	height: 200px;
+	position: relative;
+	cursor: pointer;
+	box-shadow: 0px 0px 10px 2px transparent;
+	transition: all 0.25s ease-out;
+}
+.links__title{
+	font-family: rubik;	
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 32px;
+	line-height: 38px;
+}
+.links__elem_audi{
+	background: #D1062B;
+	border-radius: 10px;
+}
+.links__elem_audi:hover{
+	background: #FF4667;
+	box-shadow: 0px 0px 10px 2px #FF96A9;
+}
+.links__elem_wolk{
+	background: #0A18B1;
+	border-radius: 10px;
+}
+.links__elem_wolk:hover{
+	background: #4A57F9;
+	box-shadow: 0px 0px 10px 2px #0077FF ;
+}
+.links__elem_skoda{
+	background: #309A0F;
+	border-radius: 10px;
+}
+.links__elem_skoda:hover{
+	background: #25D366;
+	box-shadow: 0px 0px 10px 2px #25D366;
+}
+.links__i{
+	position: absolute;
+	bottom: -65px;
+	left: 0;
+	width: 100%;
+}
+
+@media (max-width: 991.98px){
+	.header{
+		padding-bottom: 80px;
+	}
+	.offer{
+		margin-bottom: 80px;
+	}
+	.offer__title{
+		font-size: 36px;
+		margin-bottom: 50px;
+	}
+	.offer__title span{
+		font-size: 48px;
+	}
+	.offer__text{
+		font-size: 20px;
+	}
+	.links{
+		padding-bottom: 125px;
+	}
+	.links__elem{
+		height: 120px;
+		padding-top: 16px;
+		padding-left: 20px;
+	}
+	.links__title{
+		font-size: 24px;
+	}
+	.links__i{
+		position: absolute;
+		bottom: -35px;
+		left: 0;
+		width: 100%;
+	}
+}
+
+@media (max-width: 767.98px){
+	.header{
+		padding: 60px 0 80px;
+	}
+	.links__elem_skoda{
+		margin-top: 60px;
+	}
+}
+
+@media (max-width: 575.98px){
+	.links__elem{
+		height: 200px;
+	}
+	.links__elem_skoda{
+		margin-top: 0;
+	}
+	.links__elem_skoda, .links__elem_wolk{
+		margin-top: 80px;
+	}
+	.links__i{
+		bottom: -50px;
+	}
+}
+
+@media (max-width: 453.98px){
+	.offer__title{
+		font-size: 32px;
+	}
+	.offer__title span{
+		font-size: 36px;
+	}
+	.links__elem{
+		height: 120px;
+	}
+	.links__i{
+		bottom: -40px;
+	}
+}

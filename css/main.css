@@ -1,0 +1,78 @@
+@import "./fonts.css";
+@import "./root.css";
+@import "./main-styles.css";
+
+:root {
+	--bg: #fff;
+	--secondary: #7b7b7b;
+	--accent: #008800;
+	--text: #000;
+	--audi: #D1062B;
+	--wolks: #0A18B1;
+	--skoda: #309A0F;
+	--regular-text: 16px;
+	--lineheight: 1.4;
+	--transition: 0.25s ease-in-out;
+	--titlefont: rubik, sans-serif;
+	--userfont: manrope, sans-serif;
+	--systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+}
+
+body {
+	font-family: var(--userfont);
+	font-size: var(--regular-text);
+	line-height: var(--lineheight);
+	background: var(--bg);
+	color: var(--text);
+	position: relative;
+	overflow-x: hidden;
+}
+
+
+
+/* header */
+
+.header{
+	margin-bottom: 120px;
+	padding: 20px 0;
+	border-bottom: 1px solid #000;
+}
+.header__menu{
+	height: 100%;
+}
+.header__link{
+	font-size: 24px;
+	transition: color 0.25s ease-out;
+}
+.header__link:hover{
+	color: var(--accent);
+}
+.header__w{
+	display: flex;
+}
+.header__time{
+	font-size: 16px;
+}
+.header__btn{
+	padding: 8px 24px;
+	background: var(--accent);
+	border-radius: 6px;
+	color: #fff;
+	margin-right: 20px;
+	margin-left: 32px;
+}
+
+/* footer */
+
+.footer{
+	margin-top: 160px;
+	padding: 64px 0;
+	color: #fff;
+	background: #7B7B7B;
+}
+.footer__text{
+	font-size: 18px;
+}
+.footer__text:first-of-type{
+	margin-bottom: 10px;
+}
