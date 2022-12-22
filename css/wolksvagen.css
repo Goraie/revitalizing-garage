@@ -1,4 +1,4 @@
-::selection { background-color: rgba(209, 6, 43, 0.25); color: #fff; }
+::selection { background-color: rgba(10, 74, 177, 0.25); color: #fff; }
 
 .btn_primary{
 	color: #fff;
@@ -9,20 +9,20 @@
 .btn_primary:hover{
 	border: none;
 	color: #fff;
-	background: #FF4667;
-	box-shadow: 0px 0px 10px 2px #FF96A9;
+	background: #4A57F9;
+	box-shadow: 0px 0px 10px 2px #0077FF;
 }
 .btn_primary:first-child:active, .btn_primary:focus-visible{
 	border: none;
 	color: #fff;
-	background: #A00202;
+	background: #3c45cc;
 	box-shadow: none;
 }
 .popup .btn-check:checked+.btn, .btn.active, .btn.show, 
 .btn:first-child:active, :not(.btn-check)+.btn:active{
 	border: none;
 	color: #fff;
-	background-color: #A00202;
+	background-color: #3c45cc;
 	box-shadow: none;
 }
 
@@ -420,7 +420,7 @@
 .popup__input input:focus{
 	color: #fff;
 	background: transparent;
-	filter: drop-shadow(0px 4px 4px rgba(209, 6, 43, 0.25));
+	filter: drop-shadow(0px 4px 4px rgba(10, 74, 177, 0.25));
 	border-width: 0 0 1px 0;
 	border-color: var(--wolks);
 	border-style: solid;
