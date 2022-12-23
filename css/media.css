@@ -116,6 +116,9 @@
 		margin-bottom: 20px;
 		box-shadow: none;
 	}
+	.offer__skoda .offer__adress{
+		margin-top: 260px;
+	}
 	.services__tab{
 		width: fit-content;
 		font-size: 17px;
@@ -267,6 +270,9 @@
 	.header__w{
 		display: none;
 	}
+	.offer__skoda .offer__adress{
+		margin-top: 20px;
+	}
 	section{
 		margin-bottom: 60px;
 	}
@@ -304,8 +310,16 @@
 		max-width: 320px;
 	}
 	.offer__i{
-		top: 20px;
 		width: calc(80vw + 80px);
+		top: 20px;
+	}
+	.offer__wolks .offer__i{
+		top:10px;
+		width: calc(80vw + 10px);
+	}
+	.offer__skoda .offer__i{
+		top:10px;
+		width: calc(75vw + 10px);
 	}
 	.offer__w{
 		margin-top: 400px;
@@ -453,7 +467,7 @@
 		margin-top: 5px;
 	}
 	.offer__w{
-		margin-top: 310px;
+		margin-top: 350px;
 		justify-content: space-between;
 	}
 	.offer__btn{
@@ -476,7 +490,7 @@
 		--container-width: 370px;
 	}
 	.offer__w{
-		margin-top: 220px;
+		margin-top: 300px;
 		justify-content: space-between;
 	}
 	.offer__btn{
@@ -503,5 +517,8 @@
 	:root{
 		--swiper-button-marg: 10px;
 		--container-width: 292px;
+	}
+	.offer__w{
+		margin-top: 260px;
 	}
 }

@@ -46,7 +46,7 @@
 	position: absolute;
 	top: 40px;
 	right: 0;
-	width: calc(50vw + 100px);
+	width: calc(50vw + 20px);
 }
 .offer__subtitle{
 	text-transform: uppercase;
