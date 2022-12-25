@@ -83,7 +83,7 @@
 	}
 
 	:root{
-		--popup-height: 500px;
+		--popup-height: 540px;
 	}
 	.popup__w{
 		width: 800px;
@@ -248,7 +248,7 @@
 		margin-top: 120px;
 	}
 	:root{
-		--popup-height: 460px;
+		--popup-height: 580px;
 	}
 	.popup__w{
 		width: 720px;
@@ -322,7 +322,7 @@
 		width: calc(75vw + 10px);
 	}
 	.offer__w{
-		margin-top: 400px;
+		margin-top: 460px;
 		flex-direction: row-reverse;
 	}
 	.offer__btn:first-of-type{
@@ -435,7 +435,7 @@
 		display: none;
 	}
 	:root{
-		--popup-height: 400px;
+		--popup-height: 520px;
 	}
 	.popup__w{
 		width: 540px;
@@ -446,12 +446,16 @@
 		align-items: center;
 		padding: 25px 30px 0;
 		display: flex;
+		margin-bottom: 40px;
+	}
+	.popup__text{
+		margin: 0;
 	}
 	.popup__form{
 		width: 240px;
 	}
 	.popup__btn{
-		margin: 40px auto 0;
+		margin: 0 auto;
 	}
 }
 

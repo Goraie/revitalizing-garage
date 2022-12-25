@@ -142,6 +142,7 @@
 	font-size: 18px;
 	line-height: 1;
 	padding: 25px 15px;
+	transition: background 0.25s ease-out;
 }
 .services__tab.active{
 	background: var(--wolks);
@@ -230,7 +231,7 @@
 	border-radius: 20px;
 	background: #fff;
 	filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.25));
-	transition: all 0.25s ease-out;
+	transition: all 0.6s ease-out;
 }
 .feedback .swiper-slide::-webkit-scrollbar{
 	display: none;
@@ -284,17 +285,23 @@
 	height: 700px;
 	background: #D9D9D9;
 	border-width: 4px 0px;
-	border-color: var(--wolks);
+	border-color: var(--audi);
 	border-style: solid;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 .video__play{
-	background: url('../img/svg/play-blue.svg') no-repeat;
 	width: 80px;
 	height: 80px;
-	background-size: contain;
+	object-fit: contain;
+	cursor: pointer;
+}
+.video__play img{
+	transition: filter 0.25s ease-out	;
+}
+.video__play:hover img{
+	filter:drop-shadow(0px 0px 6px #4A57F9);
 }
 
 /* contacts */
@@ -362,6 +369,9 @@
 	background: rgba(0, 0, 0, 0.6);
 	display: none;
 }
+.modal{
+	color: #fff;
+}
 .popup.active{
 	display: flex;
 }
@@ -392,6 +402,10 @@
 	position: relative;
 	z-index: 2;
 	width: 50%;
+	display: flex;
+	flex-direction: column;
+	height: 470px;
+	justify-content: space-between;
 }
 .popup__text{
 	margin: 15px 0 60px;
@@ -401,6 +415,7 @@
 }
 .popup__btn{
 	border-radius: 40px;
+	width: 340px;
 	margin-top: 70px;
 }
 .popup__input{

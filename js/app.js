@@ -44,6 +44,7 @@ const servicesSLider = new Swiper('.services__slider', {
 const servicesTabs = document.querySelectorAll('.services__tab')
 const servicesText = document.querySelectorAll('.services__content')
 const servicesImages = document.querySelectorAll('.services__img')
+const headerServies = document.querySelectorAll('.header__menu .dropdown-item')
 
 servicesTabs.forEach(item => {
 	item.addEventListener('click', (e) => {
@@ -58,6 +59,22 @@ servicesTabs.forEach(item => {
 	})
 })
 
+headerServies.forEach(elem => {
+	elem.addEventListener('click', (e) => {
+		console.dir(e.target.dataset.service);
+		removeActive(servicesTabs,'active')
+		removeActive(servicesText, 'd-none')
+		removeActive(servicesImages, 'd-none')
+		for(i = 0; i < servicesTabs.length; i++){
+			if(elem.dataset.service === servicesTabs[i].dataset.tab){
+				servicesTabs[i].classList.add('active')
+				findAtttr(servicesText, elem.dataset.service)
+				findAtttr(servicesImages, elem.dataset.service)	
+			}
+		}
+	})
+});
+
 function removeActive(els, cls){
 	els.forEach(el => cls === 'd-none' ? el.classList.add(cls) : el.classList.remove(cls))
 }
@@ -70,37 +87,3 @@ function findAtttr(elements, idx){
 		}
 	})
 }
-
-
-const headerBtn = document.querySelector('.header__btn')
-const offerBtnQuest = document.querySelector('.offer__btn_quest')
-const offerBtnServ = document.querySelector('.offer__btn_serv')
-const popupQuest = document.querySelector('.popup-question')
-const popupService = document.querySelector('.popup-service')
-const popups = document.querySelectorAll('.popup')
-
-const btnQuest = [headerBtn,offerBtnQuest]
-const btnService = [offerBtnServ]
-
-
-btnQuest.forEach(btn => {
-	btn.addEventListener('click', (e) => {
-		popupQuest.classList.add('active')
-		document.querySelector('body').style.overflow = "hidden"
-	})
-})
-btnService.forEach(btn => {
-	btn.addEventListener('click', (e) => {
-		popupService.classList.add('active')
-		document.querySelector('body').style.overflow = "hidden"
-	})
-})
-popups.forEach(pop => {
-	pop.addEventListener('click', (e) => {
-		if(e.target.classList.contains('active')){
-			popupQuest.classList.remove('active')
-			popupService.classList.remove('active')
-			document.querySelector('body').style.overflow = "visible"
-		}
-	})
-})
