@@ -6,6 +6,14 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+	effect: '',
+	coverflowEffect: {
+		rotate: 0,
+		stretch: 0,
+		depth: 0,
+		modifier:10,
+		slideShadows : true,
+	},
 	breakpoints: {
     // when window width is >= 320px
     320: {
@@ -26,30 +34,40 @@ const swiper = new Swiper('.swiper', {
   }
 });
 
-const servicesSLider = new Swiper('.services__slider', {
-  loop: true,
-	slidesPerView: 'auto',
-	spaceBetween: 20,
-	breakpoints: {
-		320: {
-			spaceBetween: 0
-		},
-		480: {
-			spaceBetween: 20
-		}
-	}
-});
+// var splide = new Splide( '.splide', {
+// } );
+
+// splide.mount();
+
+// const servicesSLider = new Swiper('.services__slider', {
+//   loop: true,
+// 	slidesPerView: 'auto',
+// 	spaceBetween: 20,
+// 	breakpoints: {
+// 		320: {
+// 			spaceBetween: 0
+// 		},
+// 		480: {
+// 			spaceBetween: 20
+// 		}
+// 	}
+// });
 
 const offerHalf = document.querySelector('.offer_half')
 const offerImg = document.querySelector('.offer__i img')
 
+setHeight()
 window.addEventListener('resize', () => {
+	setHeight()
+})
+
+function setHeight() {
 	if(window.innerWidth <= 768){
 		offerHalf.style.height = offerImg.clientHeight + 'px'
 	} else {
 		offerHalf.style.height = offerImg.clientHeight + 40 + 'px'
 	}
-})
+}
 
 
 

@@ -32,8 +32,8 @@
 								<li><a class="dropdown-item" data-service="7" href="#services">Электрика</a></li>
 							</ul>
 						</div>
-						<a href="#feedback" class="header__link text">Отзывы</a>
-						<a href="#contacts" class="header__link text">Контакты</a>
+						<a href="#feedback" class="header__link text" id="#feedback">Отзывы</a>
+						<a href="#contacts" class="header__link text" id="#contacts">Контакты</a>
 					</div>
 				</div>
 				<div class="col-2 col-sm-1 col-md-4 col-lg-5 d-flex align-items-center justify-content-end">
@@ -74,7 +74,7 @@
 			<div class="row">
 				<div class="col-12">
 					<h2 class="why__title">Оживляющий Гараж</h2>
-					<p class="why__text"><span>Профильное СТО</span> Обслуживаем владельцев автомобилей Ауди</p>
+					<p class="why__text"><span>Профильное СТО</span> Обслуживаем владельцев автомобилей Шкода</p>
 				</div>
 			</div>
 			<div class="row">
@@ -110,7 +110,7 @@
 		</div>
 	</section>
 
-	<section class="services" id="services">
+	<section class="services scrollspy-example" id="services" data-bs-spy="scroll>
 		<div class="container">
 			<h2 class="services__title">Услуги СТО Оживляющий Гараж</h2>
 			<div class="services__desc">
@@ -297,7 +297,7 @@
 		</div>
 	</section>
 
-	<section class="feedback">
+	<section class="feedback" id="feedback" data-bs-spy="scroll">
 		<div class="container">
 			<h2 class="feedback__title">Реальные отзывы клиентов</h2>
 			<p class="feedback__subtitle text">Ежегодно — более 6 000 авто</p>
@@ -458,12 +458,12 @@
 		</div>
 	</section>
 
-	<section class="contacts">
+	<section class="contacts"  id="contacts" data-bs-spy="scroll">
 		<div class="container">
 			<h2 class="contacts__title">Оживляющий гараж</h2>
 			<div class="row align-items-center align-items-xl-center">
 				<div class="col-12 col-xl-5 col-lg-6">
-					<h3 class="contacts__subtitle">Ремонт и диагностика Ауди</h3>
+					<h3 class="contacts__subtitle">Ремонт и диагностика Шкода</h3>
 					<h3 class="contacts__cont">Контакты</h3>
 					<div class="contacts__item contacts__adress">
 						<div class="contacts__i"><img src="/img/svg/location-green.svg" alt=""></div>
@@ -548,7 +548,7 @@
 									<input type="tel" class="form-control" placeholder="+7 975 123 45 67" id="popumInputTelServ">
 								</div>
 						</form>
-						<button type="submit" class="popup__btn btn btn_primary" data-bs-toggle="modal" data-bs-target="#modalServ">Заказать обратный звонок</button>
+						<button type="submit" class="popup__btn btn btn_primary" data-bs-toggle="modal" data-bs-target="#modalServ">Записаться на СТО</button>
 					</div>
 				</div>
 				</div>
@@ -556,6 +556,15 @@
 			</div>
 	</div>
 
+	<section class="splide" aria-label="Splide Basic HTML Example">
+		<div class="splide__track">
+			<ul class="splide__list">
+				<li class="splide__slide">Slide 01</li>
+				<li class="splide__slide">Slide 02</li>
+				<li class="splide__slide">Slide 03</li>
+			</ul>
+		</div>
+	</section>
 
 	<footer class="footer">
 		<div class="container">
@@ -585,6 +594,7 @@
 		</div>
 	</footer>
 	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 	<script src="js/app.js"></script>
 </body>

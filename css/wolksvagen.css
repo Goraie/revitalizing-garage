@@ -14,6 +14,7 @@
 }
 .btn_primary:first-child:active, .btn_primary:focus-visible{
 	border: none;
+	outline: none;
 	color: #fff;
 	background: #3c45cc;
 	box-shadow: none;
@@ -404,11 +405,11 @@
 	width: 50%;
 	display: flex;
 	flex-direction: column;
-	height: 470px;
+	height: 440px;
 	justify-content: space-between;
 }
 .popup__text{
-	margin: 15px 0 60px;
+	margin: 15px 0 0;
 }
 .popup__form{
 	width: 310px;
@@ -416,7 +417,7 @@
 .popup__btn{
 	border-radius: 40px;
 	width: 340px;
-	margin-top: 70px;
+	margin-top: 0;
 }
 .popup__input{
 	margin: 15px 0;

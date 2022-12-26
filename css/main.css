@@ -28,6 +28,10 @@ body {
 	overflow-x: hidden;
 }
 
+button:focus:not(:focus-visible){
+	box-shadow: none;
+}
+
 .modal-content{
 	background: transparent;
 	width: fit-content;

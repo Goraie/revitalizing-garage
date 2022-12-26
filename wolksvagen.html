@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Фольцваген</title>
+	<title>Фольксваген</title>
 	<link type="image/x-icon" href="/img/favicon.png" rel="shortcut icon">
 	<link type="image/x-icon" href="/img/favicon.png" rel="icon">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -32,8 +32,8 @@
 								<li><a class="dropdown-item" data-service="7" href="#services">Электрика</a></li>
 							</ul>
 						</div>
-						<a href="#feedback" class="header__link text">Отзывы</a>
-						<a href="#contacts" class="header__link text">Контакты</a>
+						<a href="#feedback" class="header__link text" id="#feedback">Отзывы</a>
+						<a href="#contacts" class="header__link text" id="#contacts">Контакты</a>
 					</div>
 				</div>
 				<div class="col-2 col-sm-1 col-md-4 col-lg-5 d-flex align-items-center justify-content-end">
@@ -110,7 +110,7 @@
 		</div>
 	</section>
 
-	<section class="services" id="services">
+	<section class="services scrollspy-example" id="services" data-bs-spy="scroll>
 		<div class="container">
 			<h2 class="services__title">Услуги СТО Оживляющий Гараж</h2>
 			<div class="services__desc">
@@ -297,7 +297,7 @@
 		</div>
 	</section>
 
-	<section class="feedback">
+	<section class="feedback" id="feedback" data-bs-spy="scroll">
 		<div class="container">
 			<h2 class="feedback__title">Реальные отзывы клиентов</h2>
 			<p class="feedback__subtitle text">Ежегодно — более 6 000 авто</p>
@@ -458,7 +458,7 @@
 		</div>
 	</section>
 
-	<section class="contacts">
+	<section class="contacts" id="contacts" data-bs-spy="scroll">
 		<div class="container">
 			<h2 class="contacts__title">Оживляющий гараж</h2>
 			<div class="row align-items-center align-items-xl-center">
@@ -537,7 +537,7 @@
 				<div class="popup__w">
 					<div class="popup__i"><img src="/img/wolksvagen/modal-car.png" alt=""></div>
 					<div class="popup__content">
-						<h2 class="popup__title">Запись на СТО</h2>
+						<h2 class="popup__title">записаться на СТО</h2>
 						<form class="popup__form">
 								<div class="popup__input">
 									<label for="popumInputNameServ" class="form-label text_sm">Ваше имя:</label>
@@ -548,7 +548,7 @@
 									<input type="tel" class="form-control" placeholder="+7 975 123 45 67" id="popumInputTelServ">
 								</div>
 						</form>
-						<button type="submit" class="popup__btn btn btn_primary">Заказать обратный звонок</button>
+						<button type="submit" class="popup__btn btn btn_primary">Записаться на СТО</button>
 					</div>
 				</div>
 				</div>
