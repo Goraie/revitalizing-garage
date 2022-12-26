@@ -36,7 +36,6 @@
 .offer_half{
 	border-radius: 45px 0 0 45px;
 	width: 50vw;
-	height: 100%;
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -46,7 +45,7 @@
 	position: absolute;
 	top: 40px;
 	right: 0;
-	width: calc(50vw + 100px);
+	width: calc(50vw + 160px);
 }
 .offer__subtitle{
 	text-transform: uppercase;
@@ -404,11 +403,11 @@
 	width: 50%;
 	display: flex;
 	flex-direction: column;
-	height: 470px;
+	height: 440px;
 	justify-content: space-between;
 }
 .popup__text{
-	margin: 15px 0 60px;
+	margin: 15px 0 0;
 }
 .popup__form{
 	width: 310px;
@@ -416,7 +415,7 @@
 .popup__btn{
 	border-radius: 40px;
 	width: 340px;
-	margin-top: 70px;
+	margin-top: 0px;
 }
 .popup__input{
 	margin: 15px 0;

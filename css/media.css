@@ -14,6 +14,9 @@
 	.why-item__title{
 		margin-bottom: 30px;
 	}
+	.offer__i{
+		width: calc(50vw + 80px);
+	}
 }
 
 @media (max-width : 1199.98px) {
@@ -21,8 +24,11 @@
 		margin-bottom: 120px;
 	}
 	.offer_half{
-		top: 240px;
+		top: 120px;
 		height: 500px;
+	}
+	.offer__i{
+		width: calc(50vw + 60px);
 	}
 	.offer__w{
 		width: fit-content;
@@ -310,16 +316,16 @@
 		max-width: 320px;
 	}
 	.offer__i{
-		width: calc(80vw + 80px);
+		width: calc(80vw + 100px);
 		top: 20px;
 	}
 	.offer__wolks .offer__i{
 		top:10px;
-		width: calc(80vw + 10px);
+		width: calc(80vw + 100px);
 	}
 	.offer__skoda .offer__i{
 		top:10px;
-		width: calc(75vw + 10px);
+		width: calc(75vw + 100px);
 	}
 	.offer__w{
 		margin-top: 460px;

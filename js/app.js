@@ -40,6 +40,18 @@ const servicesSLider = new Swiper('.services__slider', {
 	}
 });
 
+const offerHalf = document.querySelector('.offer_half')
+const offerImg = document.querySelector('.offer__i img')
+
+window.addEventListener('resize', () => {
+	if(window.innerWidth <= 768){
+		offerHalf.style.height = offerImg.clientHeight + 'px'
+	} else {
+		offerHalf.style.height = offerImg.clientHeight + 40 + 'px'
+	}
+})
+
+
 
 const servicesTabs = document.querySelectorAll('.services__tab')
 const servicesText = document.querySelectorAll('.services__content')
